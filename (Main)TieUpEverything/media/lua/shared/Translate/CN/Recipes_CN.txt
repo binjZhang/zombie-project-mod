@@ -5,4 +5,13 @@ Recipes_CN={
        Recipe_Bundle_Small_Sheet_Metal="捆小金属板",
        Recipe_Package_Sheet_Metal="装箱金属板",
        Recipe_Package_Small_Sheet_Metal="装箱小金属板",
+       Recipe_Open_Sheet_Metal_Bundle="打开一捆金属板",
+       Recipe_Open_Sheet_Metal_Package="打开一箱金属板",
+       Recipe_Open_Small_Sheet_Metal_Bundle="打开一捆小金属板",
+       Recipe_Open_Small_Sheet_Metal_Package="打开一箱小金属板",
+       Recipe_Cut_Sheet_Metal_Bundle="切割一捆金属板",
+       Recipe_Box_Engine_Parts="装一盒引擎零件",
+       Recipe_Package_Engine_Parts="装箱引擎零件",
+       Recipe_Open_Engine_Parts_Box="打开一盒引擎零件",
+       Recipe_Open_Engine_Parts_Package="打开一箱引擎零件"
 }
