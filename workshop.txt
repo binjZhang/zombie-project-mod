@@ -1,5 +1,5 @@
-version=
-title=
-descriptipn=
-tags=
+version=(unstable)
+title=简单打包
+descriptipn=简单打包
+tags=Project Zomboid
 visibility=public
