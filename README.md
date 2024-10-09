@@ -1,1 +1,1 @@
-# zombie-project-mod
+# zomboid-project-mod
