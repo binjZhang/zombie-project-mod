@@ -1,6 +1,5 @@
 require("Camping/camping_fuel")
-campingFuelType["BundleOfFuel"] = 15  * 100 /60
-campingFuelType["WrappedBook"]=15 *10 /60
-campingFuelType["WrappedClothes"]=15 *10 /60
+campingFuelType["DamagedClothes"] = 15.0  / 60
+campingFuelType["BundleOfClothes"]=15.0 *50 /60
 -- can not be lighted
 --campingLightFireType["VacExt.BundleOfClothes"] = 15 / 60 * 10

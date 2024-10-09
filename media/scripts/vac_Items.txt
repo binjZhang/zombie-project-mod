@@ -11,7 +11,7 @@ module Base{
 
     item BundleOfClothes{
         DisplayCategory = Junk,
-        Weight = 1,
+        Weight = 0.2,
         Type = Normal,
         DisplayName= BundleOfClothes,
         Icon = BundleOfClothes
