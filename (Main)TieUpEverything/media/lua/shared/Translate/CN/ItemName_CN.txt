@@ -1,4 +1,9 @@
 ItemName_CN={
-    ItemName_Base.DamagedClothes="损毁的衣服",
-    ItemName_Base.BundleOfClothes="一捆衣服"
+
+ItemName_Base.SixPackCrisp="六连包薯片",
+ItemName_Base.RandCrisp="随机薯片",
+ItemName_Base.SheetMetalBundle="一捆金属板（10个）",
+ItemName_Base.SheetMetalPackage="一箱金属板（10捆）",
+ItemName_Base.SmallSheetMetalBundle="一捆小金属板（10个）",
+ItemName_Base.SmallSheetMetalPackage="一箱小金属板（10捆）"
 }

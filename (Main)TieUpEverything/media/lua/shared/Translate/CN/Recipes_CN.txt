@@ -1,4 +1,8 @@
 Recipes_CN={
-    Recipe_Damage_Clothes="损毁衣服",
-    Recipe_Tie_Up_Clothes="捆一包衣服"
+       Recipe_Open_Six-Pack_Chip = "打开六连包薯片",
+       Recipe_Scarp_Empty_Can = "拆解空罐子",
+       Recipe_Bundle_Sheet_Metal="捆金属板",
+       Recipe_Bundle_Small_Sheet_Metal="捆小金属板",
+       Recipe_Package_Sheet_Metal="装箱金属板",
+       Recipe_Package_Small_Sheet_Metal="装箱小金属板",
 }

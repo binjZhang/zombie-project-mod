@@ -1,0 +1,20 @@
+module Base{
+  item EnginePartsBox
+     {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10,
+          Type	=	Normal,
+          DisplayName	=	A box of engine parts (50),
+          Icon	=	EnginePartsBox
+      }
+
+ item EnginePartsPackage
+     {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	20,
+          Type	=	Normal,
+          DisplayName	=	A package of engine parts (50 * 20),
+          Icon	=	EnginePartsBox
+      }
+
+}

@@ -1,0 +1,16 @@
+module Base{
+  recipe BoxEngineParts
+     {
+     EngineParts=50,
+     Result:EnginePartsBox,
+     Time: 5
+      }
+
+   recipe PackageEngineParts
+   {
+   EnginePartsBox=20,
+   Result:EnginePartsPackage,
+   Time:5
+   }
+
+}

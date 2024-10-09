@@ -1,0 +1,82 @@
+module Base{
+
+   recipe Scarp Empty Can
+   {
+       TinCanEmpty/BeerCanEmpty/Pop2Empty/Pop3Empty/PopEmpty,
+       keep [Recipe.GetItemTypes.Hammer],
+       Result: ScrapMetal=2,
+       Time: 5
+   }
+
+   recipe Bundle Sheet Metal
+   {
+      SheetMetal=10,
+     Result: SheetMetalBundle,
+     Time: 2
+   }
+      recipe Package Sheet Metal
+      {
+         SheetMetalBundle=10,
+        Result: SheetMetalPackage,
+        Time: 2
+      }
+      recipe Bundle Small Sheet Metal
+      {
+            SmallSheetMetal=10,
+            Result: SmallSheetMetalBundle,
+            Time:2
+      }
+      recipe Package Small Sheet Metal
+      {
+                  SmallSheetMetalBundle=10,
+                  Result: SmallSheetMetalPackage,
+                  Time:2
+            }
+
+      recipe Open Sheet Metal Bundle
+      {
+           SheetMetalBundle,
+
+           Result: SheetMetal=10,
+           Time:2
+      }
+
+      recipe Open Sheet Metal Package
+      {
+      SheetMetalPackage,
+
+      Result:SheetMetalBundle=10,
+      Time:2
+      }
+
+      recipe Open Small Sheet Metal Bundle
+      {
+                 SmallSheetMetalBundle,
+
+                 Result: SmallSheetMetal=10,
+                 Time:2
+            }
+
+            recipe Open Small Sheet Metal Package
+            {
+            SmallSheetMetalPackage,
+
+            Result:SmallSheetMetalBundle=10,
+            Time:2
+            }
+
+        recipe Cut Sheet Metal Bundle
+        {
+         SheetMetalBundle,
+         BlowTorch=10,
+         keep [Recipe.GetItemTypes.WeldingMask],
+
+         Result:SmallSheetMetalBundle=3,
+         Time:250,
+       Category:Welding,
+       SkillRequired:MetalWelding=4,
+              OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+               NeedToBeLearn:false
+        }
+
+}
