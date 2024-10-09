@@ -1,0 +1,4 @@
+ItemName_CN={
+    ItemName_Base.DamagedClothes="损毁的衣服",
+    ItemName_base.BundleOfClothes="一捆衣服"
+}
