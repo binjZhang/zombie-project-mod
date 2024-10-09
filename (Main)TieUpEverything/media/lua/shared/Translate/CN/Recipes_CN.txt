@@ -1,0 +1,4 @@
+Recipes_CN={
+    Recipe_Damage_Clothes="损毁衣服",
+    Recipe_Tie_Up_Clothes="捆一包衣服"
+}
