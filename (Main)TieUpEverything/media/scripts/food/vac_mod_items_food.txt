@@ -20,6 +20,15 @@ module Base{
         Packaged = TRUE
     }
 
+item CrispsPack{
+                 DisplayName = Package Of Chip,
+          		DisplayCategory = Food,
+          		Type = Normal,
+          		Weight = 1,
+          		Icon = SixPackCrisps,
+          		CantEat = TRUE,
+          		Packaged = TRUE
+}
 
 
 }

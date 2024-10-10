@@ -7,4 +7,30 @@ recipe Open Six-Pack Chip{
     OnCreate: Recipe.OnCreate.OpenSixPackChip,
     RemoveResultItem: true
 }
+
+recipe Pack Chips{
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+      Crisps/Crisps2/Crisps3/Crisps4,
+
+      Result: CrispsPack,
+       OnCreate: Recipe.OnCreate.OnPackChips,
+      Time:10
+}
+recipe Open Pack Chips{
+      CrispsPack,
+
+      Result: RandCrisp=10,
+      OnCreate: Recipe.OnCreate.OnOpenChipPack,
+      Time:10,
+      RemoveResultItem: true
+}
+
 }

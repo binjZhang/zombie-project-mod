@@ -1,0 +1,47 @@
+module Base{
+
+/** tarkov's recipe  **/
+       recipe Make 60 round 556 Magazine{
+      556Clip=4,
+      DuctTape=1,
+      keep [Recipe.GetItemTypes.Screwdriver],
+
+     Result:556Clip60Round,
+     Time:20,
+     OnCreate:Recipe.OnCreate.OnMakeClip
+ }
+    recipe Make 60 round 556 Magazine{
+      556Clip=4,
+      Scotchtape=2,
+      keep [Recipe.GetItemTypes.Screwdriver],
+
+     Result:556Clip60Round,
+     Time:20,
+     OnCreate:Recipe.OnCreate.OnMakeClip
+ }
+
+
+recipe Make 556 Reload Kit
+{
+   556Clip=1,
+   556Bullets=2,
+   Screws=2,
+   keep [Recipe.GetItemTypes.Screwdriver],
+
+   Result: 556ReloadKit,
+   Time:20,
+
+}
+
+recipe Reload 556 Magazine
+{
+  556Clip=1,
+  keep 556ReloadKit,
+
+  Result:556Clip
+  Time : 2
+  OnTest: Recipe.OnTest.ReloadMagazine,
+  OnCreate: Recipe.OnCreate.ReloadMagazine
+}
+
+}
