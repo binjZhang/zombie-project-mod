@@ -1,13 +1,18 @@
 require("recipecode")
 
 --随机发六包薯片
-function Recipe.OnCreate.OpenSixPackChip(items, result, player, selectedItem)
-    for i = 1, 6 do
+function Recipe.OnCreate.OpenSixPackChip(items, result, player)
+   -- print(items)
+   --- print(result)
+    for i = 1, 6,1 do
+        --local r = result.get(i)
         local ind = ZombRand(4)
-        local chipName = "Crisps"
         if ind  > 0 then
-            chipName = chipName + (ind+1)
+            local chipName = "Base.Crisps" .. tostring(ind+1)
+            player:getInventory():AddItem(chipName)
+        else
+            player:getInventory():AddItem("Base.Crisps")
         end
-        player:getInventory():AddItem("Base." + chipName);
+    -- remove randCrisps   
     end
 end

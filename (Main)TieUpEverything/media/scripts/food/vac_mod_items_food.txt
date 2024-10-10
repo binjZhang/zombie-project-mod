@@ -11,11 +11,11 @@ module Base{
     }
 
     item RandCrisp{
-        DisplayName = Random Chip,
+          DisplayName = Random Chip,
          DisplayCategory = Food,
-         Type = Food,
+         Type = Normal,
          Weight = 0.2,
-         Icon = RandomCrisp,
+         Icon = RandCrisp,
         CantEat = TRUE,
         Packaged = TRUE
     }

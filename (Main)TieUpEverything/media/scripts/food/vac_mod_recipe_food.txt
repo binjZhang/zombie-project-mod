@@ -2,8 +2,9 @@ module Base{
 
 recipe Open Six-Pack Chip{
     SixPackCrisp,
-    Result: RandomCrisp = 6,
+    Result: RandCrisp = 6,
     Time: 1,
-    OnCreate: Recipe.OnCreate.OpenSixPackChip
+    OnCreate: Recipe.OnCreate.OpenSixPackChip,
+    RemoveResultItem: true
 }
 }
