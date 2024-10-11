@@ -1,0 +1,63 @@
+module VacMod{
+    item 556ClipCrate{
+
+                DisplayCategory = Ammo,
+                 Weight	=	1,
+                  Type	=	Normal,
+                  DisplayName	= A Crate of  5.56 Magazine(20),
+                   Icon:ArmyCrate,
+            }
+item 9mmClipCrate{
+
+                DisplayCategory = Ammo,
+                Weight	=	1,
+                 Type	=	Normal,
+                 DisplayName	= A Crate of  9mm Magazine(20),
+                 Icon:ArmyCrate,
+            }
+  item 45ClipCrate{
+   DisplayCategory = Ammo,
+                  Weight	=	1,
+                   Type	=	Normal,
+                   DisplayName	= A Crate of .45 Magazine(20),
+                   Icon:ArmyCrate,
+  }
+
+    item 38ClipCrate{
+     DisplayCategory = Ammo,
+                    Weight	=	1,
+                     Type	=	Normal,
+                     DisplayName	= A Crate of .38 Magazine(20),
+                     Icon:ArmyCrate,
+    }
+  item 44ClipCrate{
+   DisplayCategory = Ammo,
+                  Weight	=	1,
+                   Type	=	Normal,
+                   DisplayName	= A Crate of .44 Magazine(20),
+                   Icon:ArmyCrate,
+  }
+   item 223ClipCrate{
+     DisplayCategory = Ammo,
+                    Weight	=	1,
+                     Type	=	Normal,
+                     DisplayName	= A Crate of .223 Magazine(20),
+                     Icon:ArmyCrate,
+    }
+    
+    item 308ClipCrate{
+     DisplayCategory = Ammo,
+                    Weight	=	1,
+                     Type	=	Normal,
+                     DisplayName	= A Crate of .308 Magazine(20),
+                     Icon:ArmyCrate,
+    }
+
+     item M14ClipCrate{
+         DisplayCategory = Ammo,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	= A Crate of .308 Magazine(20),
+        Icon:ArmyCrate,
+        }
+}

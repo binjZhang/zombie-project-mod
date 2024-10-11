@@ -1,4 +1,0 @@
-ItemName_CN={
-    ItemName_Base.DamagedClothes="损毁的衣服",
-    ItemName_Base.BundleOfClothes="一捆衣服"
-}

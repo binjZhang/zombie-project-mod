@@ -1,5 +1,5 @@
-version=(unstable)
-title=简单打包
-descriptipn=简单打包
+version=always-1.0
+title=mod合集，个人制作的
+descriptipn=个人制作的mod合集
 tags=Project Zomboid
 visibility=public

@@ -1,7 +1,7 @@
-module Base{
+module VacMod{
   recipe Box Engine Parts
      {
-     EngineParts=50,
+     Base.EngineParts=50,
      Result:EnginePartsBox,
      Time: 5
       }
@@ -15,7 +15,7 @@ module Base{
 
    recipe Open Engine Parts Box{
       EnginePartsBox,
-      Result: EngineParts=50,
+      Result: Base.EngineParts=50,
       Time:5
 
    }

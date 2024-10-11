@@ -1,16 +1,16 @@
-module Base{
+module VacMod{
 
    recipe Scarp Empty Can
    {
-       TinCanEmpty/BeerCanEmpty/Pop2Empty/Pop3Empty/PopEmpty,
+       Base.TinCanEmpty/Base.BeerCanEmpty/Base.Pop2Empty/Base.Pop3Empty/Base.PopEmpty,
        keep [Recipe.GetItemTypes.Hammer],
-       Result: ScrapMetal=2,
+       Result: Base.ScrapMetal=2,
        Time: 5
    }
 
    recipe Bundle Sheet Metal
    {
-      SheetMetal=10,
+      Base.SheetMetal=10,
      Result: SheetMetalBundle,
      Time: 2
    }
@@ -22,7 +22,7 @@ module Base{
       }
       recipe Bundle Small Sheet Metal
       {
-            SmallSheetMetal=10,
+            Base.SmallSheetMetal=10,
             Result: SmallSheetMetalBundle,
             Time:2
       }
@@ -37,7 +37,7 @@ module Base{
       {
            SheetMetalBundle,
 
-           Result: SheetMetal=10,
+           Result: Base.SheetMetal=10,
            Time:2
       }
 
@@ -53,7 +53,7 @@ module Base{
       {
                  SmallSheetMetalBundle,
 
-                 Result: SmallSheetMetal=10,
+                 Result: Base.SmallSheetMetal=10,
                  Time:2
             }
 
@@ -64,19 +64,4 @@ module Base{
             Result:SmallSheetMetalBundle=10,
             Time:2
             }
-
-        recipe Cut Sheet Metal Bundle
-        {
-         SheetMetalBundle,
-         BlowTorch=10,
-         keep [Recipe.GetItemTypes.WeldingMask],
-
-         Result:SmallSheetMetalBundle=3,
-         Time:250,
-       Category:Welding,
-       SkillRequired:MetalWelding=4,
-              OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
-               NeedToBeLearn:false
-        }
-
 }
