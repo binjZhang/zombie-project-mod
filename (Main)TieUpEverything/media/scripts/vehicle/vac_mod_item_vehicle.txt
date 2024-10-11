@@ -8,13 +8,13 @@ module Base{
           Icon	=	EnginePartsBox
       }
 
- item EnginePartsPackage
+ item EnginePartsCrate
      {
           DisplayCategory = VehicleMaintenance,
           Weight	=	20,
           Type	=	Normal,
-          DisplayName	=	A package of engine parts (50 * 20),
-          Icon	=	EnginePartsBox
+          DisplayName	=	A crate of engine parts (50 * 20),
+          Icon	=	Crate
       }
 
 }

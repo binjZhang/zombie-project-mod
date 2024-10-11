@@ -14,10 +14,10 @@ module Base{
      Result: SheetMetalBundle,
      Time: 2
    }
-      recipe Package Sheet Metal
+      recipe Crate Sheet Metal
       {
          SheetMetalBundle=10,
-        Result: SheetMetalPackage,
+        Result: SheetMetalCrate,
         Time: 2
       }
       recipe Bundle Small Sheet Metal
@@ -26,10 +26,10 @@ module Base{
             Result: SmallSheetMetalBundle,
             Time:2
       }
-      recipe Package Small Sheet Metal
+      recipe Crate Small Sheet Metal
       {
                   SmallSheetMetalBundle=10,
-                  Result: SmallSheetMetalPackage,
+                  Result: SmallSheetMetalCrate,
                   Time:2
             }
 
@@ -41,9 +41,9 @@ module Base{
            Time:2
       }
 
-      recipe Open Sheet Metal Package
+      recipe Open Sheet Metal Crate
       {
-      SheetMetalPackage,
+      SheetMetalCrate,
 
       Result:SheetMetalBundle=10,
       Time:2
@@ -57,9 +57,9 @@ module Base{
                  Time:2
             }
 
-            recipe Open Small Sheet Metal Package
+            recipe Open Small Sheet Metal Crate
             {
-            SmallSheetMetalPackage,
+            SmallSheetMetalCrate,
 
             Result:SmallSheetMetalBundle=10,
             Time:2

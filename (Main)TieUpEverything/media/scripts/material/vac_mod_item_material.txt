@@ -9,14 +9,14 @@ module Base{
             Icon	=	SheetMetalBundle,
             WorldStaticModel = MetalSheet,
         }
-        item SheetMetalPackage
+        item SheetMetalCrate
              {
                     DisplayCategory = Material,
                     Weight	=	37.5,
                     Type	=	Normal,
-                    DisplayName	= A Package Of Metal Sheet(10*10),
-                    Icon	=	SheetMetalPackage,
-                    WorldStaticModel = MetalSheet,
+                    DisplayName	= A Crate Of Metal Sheet(10*10),
+                    Icon	=	SheetMetal,
+                    WorldStaticModel = Crate,
                 }
       item SmallSheetMetalBundle
     {
@@ -27,14 +27,14 @@ module Base{
         Icon	=	MetalSheetSmallBundle,
         WorldStaticModel = MetalSheetSmall
     }
-       item SmallSheetMetalPackage
+       item SmallSheetMetalCrate
         {
             DisplayCategory = Material,
             Weight	=	10,
             Type	=	Normal,
-            DisplayName	= A Package Of Small Metal Sheet(10*10),
-            Icon	=	MetalSheetSmallPackage,
-            WorldStaticModel = MetalSheetSmall
+            DisplayName	= A Crate Of Small Metal Sheet(10*10),
+            Icon	=	MetalSheetSmall,
+            WorldStaticModel = Crate
         }
 
         item

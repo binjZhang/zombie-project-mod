@@ -1,11 +1,9 @@
 ItemName_CN={
 
-ItemName_Base.SixPackCrisp="六连包薯片",
-ItemName_Base.RandCrisp="随机薯片",
 ItemName_Base.SheetMetalBundle="一捆金属板（10个）",
-ItemName_Base.SheetMetalPackage="一箱金属板（10捆）",
+ItemName_Base.SheetMetalCrate="一箱金属板（10捆）",
 ItemName_Base.SmallSheetMetalBundle="一捆小金属板（10个）",
-ItemName_Base.SmallSheetMetalPackage="一箱小金属板（10捆）",
+ItemName_Base.SmallSheetMetalCrate="一箱小金属板（10捆）",
 ItemName_Base.EnginePartsBox="一盒引擎零件（50个）",
-ItemName_Base.EnginePartsPackage="一箱引擎零件（20盒）"
+ItemName_Base.EnginePartsCrate="一箱引擎零件（20盒）"
 }

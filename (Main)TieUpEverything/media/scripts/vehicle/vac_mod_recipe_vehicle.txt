@@ -6,10 +6,10 @@ module Base{
      Time: 5
       }
 
-   recipe Package Engine Parts
+   recipe Crate Engine Parts
    {
    EnginePartsBox=20,
-   Result:EnginePartsPackage,
+   Result:EnginePartsCrate,
    Time:5
    }
 
@@ -20,8 +20,8 @@ module Base{
 
    }
 
-  recipe Open Engine Parts Package{
-      EnginePartPackage,
+  recipe Open Engine Parts Crate{
+      EnginePartCrate,
       Result: EnginePartsBox=20,
       Time:5
   }
