@@ -16,20 +16,13 @@ item 9mmClipCrate{
                  Icon:ArmyCrate,
             }
   item 45ClipCrate{
-   DisplayCategory = Ammo,
+                   DisplayCategory = Ammo,
                   Weight	=	1,
                    Type	=	Normal,
                    DisplayName	= A Crate of .45 Magazine(20),
                    Icon:ArmyCrate,
   }
 
-    item 38ClipCrate{
-     DisplayCategory = Ammo,
-                    Weight	=	1,
-                     Type	=	Normal,
-                     DisplayName	= A Crate of .38 Magazine(20),
-                     Icon:ArmyCrate,
-    }
   item 44ClipCrate{
    DisplayCategory = Ammo,
                   Weight	=	1,
@@ -57,7 +50,7 @@ item 9mmClipCrate{
          DisplayCategory = Ammo,
         Weight	=	1,
         Type	=	Normal,
-        DisplayName	= A Crate of .308 Magazine(20),
+        DisplayName	= A Crate of M14 Magazine(20),
         Icon:ArmyCrate,
         }
 }

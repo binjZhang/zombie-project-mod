@@ -1,0 +1,94 @@
+module VacMod{
+    recipe Crate 556 Clip {
+          Base.556Clip=20,
+          Result:556ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          Time:10
+    }
+
+    recipe Crate 9mm Clip{
+        Base.9mmClip=20,
+        Result:9mmClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+        Time:10
+    }
+
+    recipe Crate 45 Clip{
+        Base.45Clip=20,
+        Result:45ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+        Time:10
+    }
+
+    recipe Crate 44 Clip{
+    Base.44Clip=20,
+    Result: 44ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+    Time:10
+    }
+
+    recipe Crate 223 Clip{
+      Base.223Clip=20,
+      Result: 223ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+      Time:10
+    }
+
+    recipe Crate 308 Clip{
+        Base.308Clip=20,
+        Result: 308ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+        Time:10
+    }
+
+    recipe Crate M14 Clip{
+        Base.M14Clip=20,
+        Result: M14ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+        Time:10
+    }
+
+    recipe Open  556 Clip Crate {
+          556ClipCrate,
+          Result:Base.556Clip=20,
+          Time:10
+    }
+
+    recipe Open  9mm Clip Crate{
+        9mmClipCrate,
+        Result:Base.9mmClip=20,
+
+        Time:10
+    }
+
+    recipe Open  45 Clip Crate{
+       45ClipCrate,
+        Result: Base.45Clip=20,
+        Time:10
+    }
+
+    recipe Open  44 Clip Crate{
+    44ClipCrate,
+    Result: Base.44Clip=20,
+    Time:10
+    }
+
+    recipe Open  223 Clip Crate{
+    223ClipCrate,
+
+      Result: Base.223Clip=20,
+      Time:10
+    }
+
+    recipe Open  308 Clip Crate{
+       308ClipCrate,
+        Result:  Base.308Clip=20,
+        Time:10
+    }
+
+    recipe Open  M14 Clip Crate{
+        M14ClipCrate,
+        Result: Base.M14Clip=20,
+        Time:10
+    }
+}
