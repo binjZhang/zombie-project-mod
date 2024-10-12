@@ -61,5 +61,18 @@ module VacModExt1{
                            Tags = ReloadKit,
                            _AmmoType = Base.Bullets44,
                 }
-
+    item 556ExpansionClip1{
+        DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.3,
+        Type	=	Normal,
+        DisplayName	= Taped .556 Magazine,
+        Icon	=	BerettaClip,
+        MaxAmmo = 60,
+        AmmoType = Base.556Bullets,
+        StaticModel = GunMagazine,
+        GunType = Base.AssaultRifle,
+        WorldStaticModel = Gun_Magazine_Ground,
+        Tags = ExpansionClip,
+    }
 }

@@ -53,4 +53,19 @@ item 9mmClipCrate{
         DisplayName	= A Crate of M14 Magazine(20),
        Icon	=	GuitarCase02,
         }
+
+        item Double556Clip{
+
+        DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.4,
+        Type	=	Normal,
+        DisplayName	=	.556 Magazine,
+        Icon	=	BerettaClip,
+        MaxAmmo = 60,
+        AmmoType = Base.556Bullets,
+        StaticModel = GunMagazine,
+        GunType = Base.AssaultRifle,
+        WorldStaticModel = Gun_Magazine_Ground,
+        }
 }

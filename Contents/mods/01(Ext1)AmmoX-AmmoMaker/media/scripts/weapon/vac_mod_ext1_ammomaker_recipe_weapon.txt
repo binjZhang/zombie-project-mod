@@ -12,5 +12,11 @@ recipe Make 762 Reload Kit
    Time:150,
    OnCreate: Recipe.OnCreate.OnMakeReloadKit
 }
-
+recipe Tape Two 762 Magazine{
+    AmmoMaker.AKMMag=2,
+    Base.DuctTape/Base.Scotchtape,
+    Result: 762ExpansionClip1,
+    Time: 30,
+    OnCreate: Recipe.OnCreate.OnExpandClip
+}
 }

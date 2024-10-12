@@ -1,4 +1,5 @@
 ItemName_CN={
 
-ItemName_VacModExt1.762ReloadKit="7.62mm快速装弹器"
+ItemName_VacModExt1.762ReloadKit="7.62mm快速装弹器",
+ItemName_VacModExt1.762ExpansionClip1="2个绑在一起的7.62mm弹匣"
 }

@@ -6,5 +6,6 @@ ItemName_VacModExt1.308ReloadKit=".308快速装弹器",
 ItemName_VacModExt1.44ReloadKit=".44快速装弹器",
 ItemName_VacModExt1.45ReloadKit=".45快速装弹器",
 ItemName_VacModExt1.38ReloadKit=".38快速装弹器",
-ItemName_VacModExt1.223ReloadKit=".223快速装弹器"
+ItemName_VacModExt1.223ReloadKit=".223快速装弹器",
+ItemName_VacModExt1.556ExpansionClip1="2个绑在一起的5.56mm弹匣"
 }

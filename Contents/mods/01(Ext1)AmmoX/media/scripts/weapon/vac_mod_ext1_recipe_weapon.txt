@@ -80,8 +80,15 @@ recipe Make 556 Reload Kit
 recipe Convert 223 556
 {
    Base.223Bullets=5,
-  Base.GunPowder,
    keep [Recipe.GetItemTypes.Screwdriver],
-   Result: Base.556Bullets
+   Result: Base.556Bullets=5
+}
+
+recipe Tape Two 556 Magazine{
+    Base.556Clip=2,
+    Base.DuctTape/Base.Scotchtape,
+    Result: 556ExpansionClip1,
+    Time: 30,
+    OnCreate: Recipe.OnCreate.OnExpandClip
 }
 }

@@ -1,3 +1,4 @@
 Recipes_CN={
-       Recipe_Make_762_Reload_Kit = "制作7.62mm快速装弹器"
+       Recipe_Make_762_Reload_Kit = "制作7.62mm快速装弹器",
+       Recipe_Tape_Two_762_Magazine="把两个7.62mm弹匣绑在一起"
 }
