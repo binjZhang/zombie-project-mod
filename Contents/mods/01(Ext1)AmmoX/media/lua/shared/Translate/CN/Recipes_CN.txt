@@ -1,0 +1,11 @@
+Recipes_CN={
+       Recipe_Make_556_Reload_Kit = "制作5.56mm快速装弹器",
+       Recipe_Make_308_Reload_Kit = "制作.308快速装弹器",
+       Recipe_Make_45_Reload_Kit = "制作.45快速装弹器",
+       Recipe_Make_44_Reload_Kit = "制作.44快速装弹器",
+       Recipe_Make_9mm_Reload_Kit = "制作9mm快速装弹器",
+       Recipe_Make_38_Reload_Kit = "制作.38快速装弹器",
+       Recipe_Make_223_Reload_Kit = "制作.223快速装弹器",
+       Recipe_Convert_223_556="转换.233到5.56mm"
+
+}

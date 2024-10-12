@@ -1,0 +1,17 @@
+module VacMod{
+    recipe Crate 762 Clip {
+          AmmoMaker.AKMMag=20,
+          Result:762ClipCrate,
+          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          Time:10
+    }
+
+   
+
+    recipe Open 762 Clip Crate {
+          762ClipCrate,
+          Result:AmmoMaker.AKMMag=20,
+          Time:10
+    }
+
+   }

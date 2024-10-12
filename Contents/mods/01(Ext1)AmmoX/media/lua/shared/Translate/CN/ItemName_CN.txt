@@ -1,0 +1,10 @@
+ItemName_CN={
+
+ItemName_VacModExt1.556ReloadKit="5.56mm快速装弹器"
+ItemName_VacModExt1.9mmReloadKit="9mm快速装弹器",
+ItemName_VacModExt1.308ReloadKit=".308快速装弹器",
+ItemName_VacModExt1.44ReloadKit=".44快速装弹器",
+ItemName_VacModExt1.45ReloadKit=".45快速装弹器",
+ItemName_VacModExt1.38ReloadKit=".38快速装弹器",
+ItemName_VacModExt1.223ReloadKit=".223快速装弹器"
+}

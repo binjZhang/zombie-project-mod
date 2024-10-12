@@ -1,0 +1,4 @@
+ItemName_CN={
+
+ItemName_VacModExt1.762ReloadKit="7.62mm快速装弹器"
+}

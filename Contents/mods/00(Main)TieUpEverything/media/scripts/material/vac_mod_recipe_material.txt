@@ -1,0 +1,67 @@
+module VacMod{
+
+   recipe Scarp Empty Can
+   {
+       Base.TinCanEmpty/Base.BeerCanEmpty/Base.Pop2Empty/Base.Pop3Empty/Base.PopEmpty,
+       keep [Recipe.GetItemTypes.Hammer],
+       Result: Base.ScrapMetal=2,
+       Time: 5
+   }
+
+   recipe Bundle Sheet Metal
+   {
+      Base.SheetMetal=10,
+     Result: SheetMetalBundle,
+     Time: 2
+   }
+      recipe Crate Sheet Metal
+      {
+         SheetMetalBundle=10,
+        Result: SheetMetalCrate,
+        Time: 2
+      }
+      recipe Bundle Small Sheet Metal
+      {
+            Base.SmallSheetMetal=10,
+            Result: SmallSheetMetalBundle,
+            Time:2
+      }
+      recipe Crate Small Sheet Metal
+      {
+                  SmallSheetMetalBundle=10,
+                  Result: SmallSheetMetalCrate,
+                  Time:2
+            }
+
+      recipe Open Sheet Metal Bundle
+      {
+           SheetMetalBundle,
+
+           Result: Base.SheetMetal=10,
+           Time:2
+      }
+
+      recipe Open Sheet Metal Crate
+      {
+      SheetMetalCrate,
+
+      Result:SheetMetalBundle=10,
+      Time:2
+      }
+
+      recipe Open Small Sheet Metal Bundle
+      {
+                 SmallSheetMetalBundle,
+
+                 Result: Base.SmallSheetMetal=10,
+                 Time:2
+            }
+
+            recipe Open Small Sheet Metal Crate
+            {
+            SmallSheetMetalCrate,
+
+            Result:SmallSheetMetalBundle=10,
+            Time:2
+            }
+}

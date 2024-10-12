@@ -1,0 +1,3 @@
+Recipes_CN={
+  Recipe_Crate_762_Clip = "装箱7.62mm弹匣",
+  Recipe_Open_762_Clip_Crate = "打开一箱7.62mm弹匣",

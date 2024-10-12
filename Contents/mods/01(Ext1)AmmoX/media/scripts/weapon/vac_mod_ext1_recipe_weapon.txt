@@ -1,0 +1,87 @@
+module VacModExt1{
+
+recipe Make 556 Reload Kit
+{
+   Base.556Clip=1,
+   Base.556Bullets=2,
+   Base.Screws=2,
+   Base.SheetMetal,
+   Base.Nails=4,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: 556ReloadKit,
+   Time:150,
+   OnCreate: Recipe.OnCreate.OnMakeReloadKit
+}
+
+    recipe Make 9mm Reload Kit
+    {
+   Base.9mmClip=1,
+   Base.Bullets9mm=2,
+   Base.Screws=2,
+   Base.SheetMetal,
+   Base.Nails=4,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: 9mmReloadKit,
+   Time:150,
+   OnCreate: Recipe.OnCreate.OnMakeReloadKit
+}
+    recipe Make 45 Reload Kit
+    {
+   Base.45Clip=1,
+   Base.Bullets45=2,
+   Base.Screws=2,
+   Base.SheetMetal,
+   Base.Nails=4,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: 45ReloadKit,
+   Time:150,
+   OnCreate: Recipe.OnCreate.OnMakeReloadKit
+}
+
+    recipe Make 308 Reload Kit
+    {
+   Base.M14Clip=1,
+   Base.308Bullets=2,
+   Base.Screws=2,
+   Base.SheetMetal,
+   Base.Nails=4,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: 308ReloadKit,
+   Time:150,
+   OnCreate: Recipe.OnCreate.OnMakeReloadKit
+}
+
+    recipe Make 308 Reload Kit
+    {
+   Base.308Clip=3,
+   Base.308Bullets=2,
+   Base.Screws=2,
+   Base.SheetMetal,
+   Base.Nails=4,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: 308ReloadKit,
+   Time:150,
+   OnCreate: Recipe.OnCreate.OnMakeReloadKit
+}
+
+    recipe Make 44 Reload Kit
+    {
+   Base.44Clip=1,
+   Base.Bullets44=2,
+   Base.Screws=2,
+   Base.SheetMetal,
+   Base.Nails=4,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: 44ReloadKit,
+   Time:150,
+   OnCreate: Recipe.OnCreate.OnMakeReloadKit
+}
+
+recipe Convert 223 556
+{
+   Base.223Bullets=5,
+  Base.GunPowder,
+   keep [Recipe.GetItemTypes.Screwdriver],
+   Result: Base.556Bullets
+}
+}
