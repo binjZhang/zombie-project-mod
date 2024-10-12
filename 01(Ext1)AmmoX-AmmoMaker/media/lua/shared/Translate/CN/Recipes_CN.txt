@@ -1,3 +1,0 @@
-Recipes_CN={
-       Recipe_Make_762_Reload_Kit = "制作7.62mm快速装弹器"
-}

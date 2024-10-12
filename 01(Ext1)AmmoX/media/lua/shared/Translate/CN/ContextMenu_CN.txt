@@ -1,6 +1,0 @@
-ContextMenu_CN = {
-ContextMenu_Reload_Kit_Bullets = "补充%1发弹药",
-ContextMenu_Transfer_Kit_2_Mag="补充%1发弹药到弹匣",
-ContextMenu_Remove_From_Kit="取出%1发弹药",
-ContextMenu_Transfer_Kit_2_Mag_All="补充到所有弹匣"
-}

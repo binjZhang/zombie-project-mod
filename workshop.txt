@@ -1,5 +1,7 @@
-version=always-1.0
-title=mod合集，个人制作的
-descriptipn=个人制作的mod合集
-tags=Project Zomboid
+version=1
+id=3345759106
+title=个人用mod
+description=做了一些打包mod和弹药武器快速装填器
+description=适配蛇佬的 ammoMake 
+tags=Build 41;Weapons
 visibility=public
