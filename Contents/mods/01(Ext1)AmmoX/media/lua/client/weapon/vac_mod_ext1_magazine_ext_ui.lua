@@ -1,3 +1,4 @@
+
 local NewFindBestMagazine = function(weapon, player)
     -- when press reload Key ，will find all magazine with the ammoType and gunType
     local ammoType = weapon:getAmmoType()
@@ -19,9 +20,7 @@ local ReplaceBestMagazine = function(_, weapon)
     if not instanceof(weapon, "HandWeapon") then
         return
     end
-    function weapon:getBestMagazine(player)
-        NewFindBestMagazine(self, player)
-    end
+    weapon.getBestMagazine = NewFindBestMagazine
 end
 
 -- replace getBestMagazine method

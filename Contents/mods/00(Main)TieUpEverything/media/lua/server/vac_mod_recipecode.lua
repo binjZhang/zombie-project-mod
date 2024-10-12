@@ -1,6 +1,12 @@
 require("recipecode")
+VacModRecipe={}
+VacModRecipe.GetItemTypes = {}
+VacModRecipe.OnCanPerform = {}
+VacModRecipe.OnCreate = {}
+VacModRecipe.OnGiveXP = {}
+VacModRecipe.OnTest = {}
 
-function Recipe.OnCreate.OnCrateMagazine(items, result, player)
+function VacModRecipe.OnCreate.OnCrateMagazine(items, result, player)
     for i = 1, items:size() do
         local mag = items:get(i - 1)
         if mag:getCurrentAmmoCount() > 0 then

@@ -2,7 +2,7 @@ module VacMod{
     recipe Crate 762 Clip {
           AmmoMaker.AKMMag=20,
           Result:762ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
           Time:10
     }
 

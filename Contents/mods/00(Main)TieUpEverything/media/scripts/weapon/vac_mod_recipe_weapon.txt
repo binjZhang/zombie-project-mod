@@ -2,49 +2,49 @@ module VacMod{
     recipe Crate 556 Clip {
           Base.556Clip=20,
           Result:556ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
           Time:10
     }
 
     recipe Crate 9mm Clip{
         Base.9mmClip=20,
         Result:9mmClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
         Time:10
     }
 
     recipe Crate 45 Clip{
         Base.45Clip=20,
         Result:45ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
         Time:10
     }
 
     recipe Crate 44 Clip{
     Base.44Clip=20,
     Result: 44ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
     Time:10
     }
 
     recipe Crate 223 Clip{
       Base.223Clip=20,
       Result: 223ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
       Time:10
     }
 
     recipe Crate 308 Clip{
         Base.308Clip=20,
         Result: 308ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
         Time:10
     }
 
     recipe Crate M14 Clip{
         Base.M14Clip=20,
         Result: M14ClipCrate,
-          OnCreate:Recipe.OnCreate.OnCrateMagazine,
+          OnCreate:VacModRecipe.OnCreate.OnCrateMagazine,
         Time:10
     }
 
