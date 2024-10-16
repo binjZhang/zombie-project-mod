@@ -36,6 +36,4 @@ module VacMod{
             Icon	=	Crate,
             WorldStaticModel = Crate
         }
-
-        item
 }
