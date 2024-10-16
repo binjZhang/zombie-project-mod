@@ -86,7 +86,7 @@ module VacMod
   recipe Pack Broken Cloth
   {
     BrokenCloth = 50,
-    SheetRope,
+    Base.SheetRope,
  
     Result : ClothFuel,
     Time : 150,
