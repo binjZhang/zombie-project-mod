@@ -1,29 +1,31 @@
-module VacModExt1{
+module VacModExt1
+{
 
-    item 762ReloadKit{
-       DisplayCategory = Ammo,
-               Weight = 5,
-               Type = Normal,
-               DisplayName	= 7.62 Reload Kit,
-               Icon = BulletMold,
-               MetalValue = 15,
-               WorldStaticModel = Base.ShotGunShellsMold_Ground,
-               Tags = ReloadKit,
-               _AmmoType = AmmoMaker.Ammo_762x39mm
-    }
-   item 762ExpansionClip1{
+  item 762ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName	= 7.62 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = AmmoMaker.Ammo_762x39mm,
+  }
 
-		DisplayCategory = Ammo,
-        CanStack	=	FALSE,
-        Weight	=	0.3,
-        Type	=	Normal,
-        DisplayName	=	.762 Magazine,
-        Icon	=	AK47Mag,
-        MaxAmmo = 60,
-        AmmoType = AmmoMaker.Ammo_762x39mm,
-        StaticModel = AmmoMaker.AKMMag,
-		GunType = AmmoMaker.AK47,
-		WorldStaticModel = AmmoMaker.AKMMag,
-		WorldStaticModel = AmmoMaker.AKMMag,
-    }
+  item 762ExpansionClip1
+  {
+    AmmoType = AmmoMaker.Ammo_762x39mm,
+    CanStack	=	FALSE,
+    DisplayCategory = Ammo,
+    DisplayName	=	.762 Magazine,
+    GunType = AmmoMaker.AK47,
+    Icon	=	AK47Mag,
+    MaxAmmo = 60,
+    StaticModel = AmmoMaker.AKMMag,
+    Type	=	Normal,
+    Weight	=	0.3,
+    WorldStaticModel = AmmoMaker.AKMMag,
+  }
 }

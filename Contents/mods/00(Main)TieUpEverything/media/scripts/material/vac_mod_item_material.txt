@@ -1,39 +1,43 @@
-module VacMod{
+module VacMod
+{
 
-    item SheetMetalBundle
-     {
-            DisplayCategory = Material,
-            Weight	=	7.5,
-            Type	=	Normal,
-            DisplayName	= A Bundle Of Metal Sheet(10),
-            Icon	=	SheetMetalBundle,
-            WorldStaticModel = MetalSheet,
-        }
-        item SheetMetalCrate
-             {
-                    DisplayCategory = Material,
-                    Weight	=	37.5,
-                    Type	=	Normal,
-                    DisplayName	= A Crate Of Metal Sheet(10*10),
-                    Icon	=	Crate,
-                    WorldStaticModel = Crate,
-                }
-      item SmallSheetMetalBundle
-    {
-        DisplayCategory = Material,
-        Weight	=	2,
-        Type	=	Normal,
-        DisplayName	= A Bundle Of Small Metal Sheet(10),
-        Icon	=	MetalSheetSmallBundle,
-        WorldStaticModel = MetalSheetSmall
-    }
-       item SmallSheetMetalCrate
-        {
-            DisplayCategory = Material,
-            Weight	=	10,
-            Type	=	Normal,
-            DisplayName	= A Crate Of Small Metal Sheet(10*10),
-            Icon	=	Crate,
-            WorldStaticModel = Crate
-        }
+  item SheetMetalBundle
+  {
+    DisplayCategory = Material,
+    DisplayName	= A Bundle Of Metal Sheet(10),
+    Icon	=	SheetMetalBundle,
+    Type	=	Normal,
+    Weight	=	7.5,
+    WorldStaticModel = MetalSheet,
+  }
+
+  item SheetMetalCrate
+  {
+    DisplayCategory = Material,
+    DisplayName	= A Crate Of Metal Sheet(10*10),
+    Icon	=	Crate,
+    Type	=	Normal,
+    Weight	=	37.5,
+    WorldStaticModel = Crate,
+  }
+
+  item SmallSheetMetalBundle
+  {
+    DisplayCategory = Material,
+    DisplayName	= A Bundle Of Small Metal Sheet(10),
+    Icon	=	MetalSheetSmallBundle,
+    Type	=	Normal,
+    Weight	=	2,
+    WorldStaticModel = MetalSheetSmall,
+  }
+
+  item SmallSheetMetalCrate
+  {
+    DisplayCategory = Material,
+    DisplayName	= A Crate Of Small Metal Sheet(10*10),
+    Icon	=	Crate,
+    Type	=	Normal,
+    Weight	=	10,
+    WorldStaticModel = Crate,
+  }
 }

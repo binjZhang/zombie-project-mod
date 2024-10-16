@@ -1,22 +1,27 @@
-module VacModExt1{
-
-recipe Make 762 Reload Kit
+module VacModExt1
 {
-   AmmoMaker.AKMMag=1,
-   AmmoMaker.Ammo_762x39mm=2,
-   Base.Screws=2,
-   Base.SheetMetal,
-   Base.Nails=4,
-   keep [Recipe.GetItemTypes.Screwdriver],
-   Result: 762ReloadKit,
-   Time:150,
-   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
-}
-recipe Tape Two 762 Magazine{
-    AmmoMaker.AKMMag=2,
+
+  recipe Make 762 Reload Kit
+  {
+    AmmoMaker.AKMMag,
+    AmmoMaker.Ammo_762x39mm = 2,
+    Base.Nails = 4,
+    Base.Screws = 2,
+    Base.SheetMetal,
+    keep [Recipe.GetItemTypes.Screwdriver],
+ 
+    Result : 762ReloadKit,
+    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
+    Time : 150,
+  }
+
+  recipe Tape Two 762 Magazine
+  {
+    AmmoMaker.AKMMag = 2,
     Base.DuctTape/Base.Scotchtape,
-    Result: 762ExpansionClip1,
-    Time: 30,
-    OnCreate: VacExt1Recipe.OnCreate.OnExpandClip
-}
+ 
+    Result : 762ExpansionClip1,
+    OnCreate : VacExt1Recipe.OnCreate.OnExpandClip,
+    Time : 30,
+  }
 }

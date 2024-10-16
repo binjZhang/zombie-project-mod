@@ -1,93 +1,100 @@
-module VacModExt1{
+module VacModExt1
+{
 
-    item 556ReloadKit{
-       DisplayCategory = Ammo,
-              Weight = 5,
-               Type = Normal,
-               DisplayName	= 5.56 Reload Kit,
-               Icon = BulletMold,
-               MetalValue = 15,
-               WorldStaticModel = Base.ShotGunShellsMold_Ground,
-               Tags = ReloadKit,
-               _AmmoType = Base.556Bullets,
-    }
+  item 556ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName	= 5.56 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.556Bullets,
+  }
 
-        item 9mmReloadKit{
-               DisplayCategory = Ammo,
-              Weight = 5,
-               Type = Normal,
-               DisplayName	= 9mm Reload Kit,
-               Icon = BulletMold,
-               MetalValue = 15,
-               WorldStaticModel = Base.ShotGunShellsMold_Ground,
-               Tags = ReloadKit,
-               _AmmoType = Base.Bullets9mm,
+  item 9mmReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName	= 9mm Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.Bullets9mm,
+  }
 
-    }
+  item 308ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName	= .308 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.308Bullets,
+  }
 
-     item 308ReloadKit{
-                   DisplayCategory = Ammo,
-                  Weight = 5,
-                   Type = Normal,
-                   DisplayName	= .308 Reload Kit,
-                   Icon = BulletMold,
-                   MetalValue = 15,
-                   WorldStaticModel = Base.ShotGunShellsMold_Ground,
-                   Tags = ReloadKit,
-                   _AmmoType = Base.308Bullets,
+  item 45ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName	= .45 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.Bullets45,
+  }
 
-        }
+  item 44ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName	= .44 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.Bullets44,
+  }
 
-        item 45ReloadKit{
-                   DisplayCategory = Ammo,
-                  Weight = 5,
-                   Type = Normal,
-                   DisplayName	= .45 Reload Kit,
-                   Icon = BulletMold,
-                   MetalValue = 15,
-                   WorldStaticModel = Base.ShotGunShellsMold_Ground,
-                   Tags = ReloadKit,
-                   _AmmoType = Base.Bullets45,
-        }
+  item 556ExpansionClip1
+  {
+    AmmoType = Base.556Bullets,
+    CanStack	=	FALSE,
+    DisplayCategory = Ammo,
+    DisplayName	= Taped .556 Magazine,
+    GunType = Base.AssaultRifle,
+    Icon	=	BerettaClip,
+    MaxAmmo = 60,
+    StaticModel = GunMagazine,
+    Tags = ExpansionClip,
+    Type	=	Normal,
+    Weight	=	0.3,
+    WorldStaticModel = Gun_Magazine_Ground,
+  }
 
-         item 44ReloadKit{
-                           DisplayCategory = Ammo,
-                          Weight = 5,
-                           Type = Normal,
-                           DisplayName	= .44 Reload Kit,
-                           Icon = BulletMold,
-                           MetalValue = 15,
-                           WorldStaticModel = Base.ShotGunShellsMold_Ground,
-                           Tags = ReloadKit,
-                           _AmmoType = Base.Bullets44,
-                }
-    item 556ExpansionClip1{
-        DisplayCategory = Ammo,
-        CanStack	=	FALSE,
-        Weight	=	0.3,
-        Type	=	Normal,
-        DisplayName	= Taped .556 Magazine,
-        Icon	=	BerettaClip,
-        MaxAmmo = 60,
-        AmmoType = Base.556Bullets,
-        StaticModel = GunMagazine,
-        GunType = Base.AssaultRifle,
-        WorldStaticModel = Gun_Magazine_Ground,
-        Tags = ExpansionClip,
-    }
-
-    item 556ExpansionClip2{
-          DisplayCategory = Ammo,
-                  CanStack	=	FALSE,
-                  Weight	=	0.1,
-                  Type	=	Normal,
-                  DisplayName	= Hand Made .556 Magazine,
-                  Icon	=	BerettaClip,
-                  MaxAmmo = 10,
-                  AmmoType = Base.556Bullets,
-                  StaticModel = GunMagazine,
-                  GunType = Base.AssaultRifle,
-                  WorldStaticModel = Gun_Magazine_Ground,
-                  Tags = ExpansionClip,
-    }
+  item 556ExpansionClip2
+  {
+    AmmoType = Base.556Bullets,
+    CanStack	=	FALSE,
+    DisplayCategory = Ammo,
+    DisplayName	= Hand Made .556 Magazine,
+    GunType = Base.AssaultRifle,
+    Icon	=	BerettaClip,
+    MaxAmmo = 10,
+    StaticModel = GunMagazine,
+    Tags = ExpansionClip,
+    Type	=	Normal,
+    Weight	=	0.1,
+    WorldStaticModel = Gun_Magazine_Ground,
+  }
 }

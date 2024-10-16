@@ -1,20 +1,21 @@
-module VacMod{
+module VacMod
+{
+
   item EnginePartsBox
-     {
-          DisplayCategory = VehicleMaintenance,
-          Weight	=	10,
-          Type	=	Normal,
-          DisplayName	=	A box of engine parts (50),
-          Icon	=	EnginePartsBox
-      }
+  {
+    DisplayCategory = VehicleMaintenance,
+    DisplayName	=	A box of engine parts (50),
+    Icon	=	EnginePartsBox,
+    Type	=	Normal,
+    Weight	=	10,
+  }
 
- item EnginePartsCrate
-     {
-          DisplayCategory = VehicleMaintenance,
-          Weight	=	20,
-          Type	=	Normal,
-          DisplayName	=	A crate of engine parts (50 * 20),
-          Icon	=	Crate
-      }
-
+  item EnginePartsCrate
+  {
+    DisplayCategory = VehicleMaintenance,
+    DisplayName	=	A crate of engine parts (50 * 20),
+    Icon	=	Crate,
+    Type	=	Normal,
+    Weight	=	20,
+  }
 }
