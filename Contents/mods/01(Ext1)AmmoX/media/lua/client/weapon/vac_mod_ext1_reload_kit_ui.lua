@@ -14,13 +14,14 @@ local InertIntoReloadKitAction = function(player, reloadKit)
             player:getInventory():RemoveOneOf(ammoType)
         end
     end
-
+    reloadKit:setTooltip(getText("Tooltip_weapon_AmmoCount") ..
+        ": " .. reloadKit:getCurrentAmmoCount() .. "/" .. reloadKit:getModData()["_MaxAmmo"])
 end
 
 local TransferBulletToMagazineAction = function(player, reloadKit, magazine)
     if reloadKit:getModData()["_AmmoType"] == magazine:getAmmoType()
-            and reloadKit:getCurrentAmmoCount() > 0
-            and magazine:getCurrentAmmoCount() < magazine:getMaxAmmo()
+        and reloadKit:getCurrentAmmoCount() > 0
+        and magazine:getCurrentAmmoCount() < magazine:getMaxAmmo()
     then
         if reloadKit:hasTag("ReloadKit") then
             -- do transfer
@@ -34,6 +35,9 @@ local TransferBulletToMagazineAction = function(player, reloadKit, magazine)
             -- print(reloadKit:getCurrentAmmoCount())
         end
     end
+
+    reloadKit:setTooltip(getText("Tooltip_weapon_AmmoCount") ..
+        ": " .. reloadKit:getCurrentAmmoCount() .. "/" .. reloadKit:getModData()["_MaxAmmo"])
 end
 
 local TransferBulletToAllMagazineAction = function(player, reloadKit, magazines)
@@ -41,6 +45,9 @@ local TransferBulletToAllMagazineAction = function(player, reloadKit, magazines)
         local mag = magazines:get(i - 1)
         TransferBulletToMagazineAction(player, reloadKit, mag)
     end
+
+    reloadKit:setTooltip(getText("Tooltip_weapon_AmmoCount") ..
+        ": " .. reloadKit:getCurrentAmmoCount() .. "/" .. reloadKit:getModData()["_MaxAmmo"])
 end
 
 local UnloadFromKitAction = function(player, reloadKit)
@@ -54,6 +61,9 @@ local UnloadFromKitAction = function(player, reloadKit)
         local newBullet = InventoryItemFactory.CreateItem(ammoType)
         player:getInventory():AddItem(newBullet)
     end
+
+    reloadKit:setTooltip(getText("Tooltip_weapon_AmmoCount") ..
+        ": " .. reloadKit:getCurrentAmmoCount() .. "/" .. reloadKit:getModData()["_MaxAmmo"])
 end
 
 local AddOptionForReloadKit = function(player, reloadKit, context)
@@ -89,16 +99,18 @@ local AddOptionForTransBullet = function(player, reloadKit, context)
     for i = 1, player:getInventory():getItems():size() do
         local invItem = player:getInventory():getItems():get(i - 1)
         if invItem:getAmmoType() and invItem:getAmmoType() == ammoType
-                and invItem:getGunType() and invItem:getCurrentAmmoCount() < invItem:getMaxAmmo() then
+            and invItem:getGunType() and invItem:getCurrentAmmoCount() < invItem:getMaxAmmo() then
             notMaxMags:add(invItem)
         end
     end
     if notMaxMags:size() == 1 then
         local first = notMaxMags:get(0)
-        local text = getText("ContextMenu_Transfer_Kit_2_Mag", math.min(ammoCount, first:getMaxAmmo() - first:getCurrentAmmoCount()))
+        local text = getText("ContextMenu_Transfer_Kit_2_Mag",
+            math.min(ammoCount, first:getMaxAmmo() - first:getCurrentAmmoCount()))
         context:addOption(text, player, TransferBulletToMagazineAction, reloadKit, first)
     elseif notMaxMags:size() > 1 then
-        context:addOptionOnTop(getText("ContextMenu_Transfer_Kit_2_Mag_All"), player, TransferBulletToAllMagazineAction, reloadKit, notMaxMags)
+        context:addOptionOnTop(getText("ContextMenu_Transfer_Kit_2_Mag_All"), player, TransferBulletToAllMagazineAction,
+            reloadKit, notMaxMags)
     end
 end
 
@@ -118,7 +130,6 @@ local OnFillReloadKitAction = function(playerNum, context, items)
             context:addOptionOnTop(getText("ContextMenu_Reload_kit_Current_Count", reloadKit:getCurrentAmmoCount()), nil)
         end
     end
-
 end
 
 -- Add Event

@@ -10,13 +10,13 @@ recipe Make 762 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 762ReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
 recipe Tape Two 762 Magazine{
     AmmoMaker.AKMMag=2,
     Base.DuctTape/Base.Scotchtape,
     Result: 762ExpansionClip1,
     Time: 30,
-    OnCreate: VacExtRecipe.OnCreate.OnExpandClip
+    OnCreate: VacExt1Recipe.OnCreate.OnExpandClip
 }
 }

@@ -10,7 +10,7 @@ recipe Make 556 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 556ReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
 
     recipe Make 9mm Reload Kit
@@ -23,7 +23,7 @@ recipe Make 556 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 9mmReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
     recipe Make 45 Reload Kit
     {
@@ -35,7 +35,7 @@ recipe Make 556 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 45ReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
 
     recipe Make 308 Reload Kit
@@ -48,7 +48,7 @@ recipe Make 556 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 308ReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
 
     recipe Make 308 Reload Kit
@@ -61,7 +61,7 @@ recipe Make 556 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 308ReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
 
     recipe Make 44 Reload Kit
@@ -74,7 +74,7 @@ recipe Make 556 Reload Kit
    keep [Recipe.GetItemTypes.Screwdriver],
    Result: 44ReloadKit,
    Time:150,
-   OnCreate: VacExtRecipe.OnCreate.OnMakeReloadKit
+   OnCreate: VacExt1Recipe.OnCreate.OnMakeReloadKit
 }
 
 recipe Convert 223 556
@@ -89,6 +89,14 @@ recipe Tape Two 556 Magazine{
     Base.DuctTape/Base.Scotchtape,
     Result: 556ExpansionClip1,
     Time: 30,
-    OnCreate: VacExtRecipe.OnCreate.OnExpandClip
+    OnCreate: VacExt1Recipe.OnCreate.OnExpandClip
+}
+
+recipe Hand Make 556 Magazine{
+    Base.SheetMetal=2,
+    keep [Recipe.GetItemTypes.Hammer],
+    Base.DuctTape/Base.Scotchtape,
+    Result:556ExpansionClip2,
+    Time: 60,
 }
 }

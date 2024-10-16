@@ -77,6 +77,17 @@ module VacModExt1{
     }
 
     item 556ExpansionClip2{
-
+          DisplayCategory = Ammo,
+                  CanStack	=	FALSE,
+                  Weight	=	0.1,
+                  Type	=	Normal,
+                  DisplayName	= Hand Made .556 Magazine,
+                  Icon	=	BerettaClip,
+                  MaxAmmo = 10,
+                  AmmoType = Base.556Bullets,
+                  StaticModel = GunMagazine,
+                  GunType = Base.AssaultRifle,
+                  WorldStaticModel = Gun_Magazine_Ground,
+                  Tags = ExpansionClip,
     }
 }
