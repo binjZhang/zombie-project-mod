@@ -4,9 +4,9 @@ module VacMod
   item 762ClipCrate
   {
     DisplayCategory = Ammo,
-    DisplayName	= A Crate of  7.62 Magazine(20),
-    Icon	=	GuitarCase02,
-    Type	=	Normal,
-    Weight	=	1,
+    DisplayName = A Crate of  7.62 Magazine(20),
+    Icon = GuitarCase02,
+    Type = Normal,
+    Weight = 1,
   }
 }

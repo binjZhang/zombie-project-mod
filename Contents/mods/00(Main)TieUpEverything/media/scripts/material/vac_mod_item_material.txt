@@ -4,40 +4,54 @@ module VacMod
   item SheetMetalBundle
   {
     DisplayCategory = Material,
-    DisplayName	= A Bundle Of Metal Sheet(10),
-    Icon	=	SheetMetalBundle,
-    Type	=	Normal,
-    Weight	=	7.5,
+    DisplayName = A Bundle Of Metal Sheet(10),
+    Icon = SheetMetalBundle,
+    Type = Normal,
+    Weight = 7.5,
     WorldStaticModel = MetalSheet,
   }
 
   item SheetMetalCrate
   {
     DisplayCategory = Material,
-    DisplayName	= A Crate Of Metal Sheet(10*10),
-    Icon	=	Crate,
-    Type	=	Normal,
-    Weight	=	37.5,
+    DisplayName = A Crate Of Metal Sheet(10*10),
+    Icon = Crate,
+    Type = Normal,
+    Weight = 37.5,
     WorldStaticModel = Crate,
   }
 
   item SmallSheetMetalBundle
   {
     DisplayCategory = Material,
-    DisplayName	= A Bundle Of Small Metal Sheet(10),
-    Icon	=	MetalSheetSmallBundle,
-    Type	=	Normal,
-    Weight	=	2,
+    DisplayName = A Bundle Of Small Metal Sheet(10),
+    Icon = MetalSheetSmallBundle,
+    Type = Normal,
+    Weight = 2,
     WorldStaticModel = MetalSheetSmall,
   }
 
   item SmallSheetMetalCrate
   {
     DisplayCategory = Material,
-    DisplayName	= A Crate Of Small Metal Sheet(10*10),
-    Icon	=	Crate,
-    Type	=	Normal,
-    Weight	=	10,
+    DisplayName = A Crate Of Small Metal Sheet(10*10),
+    Icon = Crate,
+    Type = Normal,
+    Weight = 10,
     WorldStaticModel = Crate,
+  }
+
+  item BrokenCloth
+  {
+    DisplayCategory = Junk,
+    Type = Normal,
+    Weight = 0.2,
+  }
+
+  item ClothFuel
+  {
+    DisplayCategory = Junk,
+    Type = Normal,
+    Weight = 1,
   }
 }

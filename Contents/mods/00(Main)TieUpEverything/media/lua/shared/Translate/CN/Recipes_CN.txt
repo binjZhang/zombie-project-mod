@@ -26,5 +26,7 @@ Recipes_CN={
   Recipe_Open_Sheet_Metal_Crate = "打开一箱金属板",
   Recipe_Open_Small_Sheet_Metal_Bundle = "打开一捆小金属板",
   Recipe_Open_Small_Sheet_Metal_Crate = "打开一箱小金属板",
-  Recipe_Scarp_Empty_Can  =  "拆解空罐子"
+  Recipe_Scarp_Empty_Can  =  "拆解空罐子",
+  Recipe_Break_Cloth = "损坏衣服",
+  Recipe_ Pack_Broken_Cloth = "打包损坏的衣服"
 }

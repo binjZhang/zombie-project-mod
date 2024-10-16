@@ -4,7 +4,7 @@ module VacModExt1
   item 762ReloadKit
   {
     DisplayCategory = Ammo,
-    DisplayName	= 7.62 Reload Kit,
+    DisplayName = 7.62 Reload Kit,
     Icon = BulletMold,
     MetalValue = 15,
     Tags = ReloadKit,
@@ -17,15 +17,15 @@ module VacModExt1
   item 762ExpansionClip1
   {
     AmmoType = AmmoMaker.Ammo_762x39mm,
-    CanStack	=	FALSE,
+    CanStack = FALSE,
     DisplayCategory = Ammo,
-    DisplayName	=	.762 Magazine,
+    DisplayName = .762 Magazine,
     GunType = AmmoMaker.AK47,
-    Icon	=	AK47Mag,
+    Icon = AK47Mag,
     MaxAmmo = 60,
     StaticModel = AmmoMaker.AKMMag,
-    Type	=	Normal,
-    Weight	=	0.3,
+    Type = Normal,
+    Weight = 0.3,
     WorldStaticModel = AmmoMaker.AKMMag,
   }
 }

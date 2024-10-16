@@ -1,5 +1,4 @@
 ItemName_CN={
-
 ItemName_VacMod.SheetMetalBundle="一捆金属板（10个）",
 ItemName_VacMod.SheetMetalCrate="一箱金属板（10捆）",
 ItemName_VacMod.SmallSheetMetalBundle="一捆小金属板（10个）",
@@ -12,5 +11,7 @@ ItemName_VacMod.45ClipCrate="一箱.45弹匣（20个）",
 ItemName_VacMod.223ClipCrate="一箱.223弹匣（20个）",
 ItemName_VacMod.308ClipCrate="一箱.308弹夹（20个）",
 ItemName_VacMod.M14ClipCrate="一箱.308弹匣（20个）",
-ItemName_VacMod.44ClipCrate="一箱.44弹匣（20个）"
+ItemName_VacMod.44ClipCrate="一箱.44弹匣（20个）",
+ItemName_VacMod.BrokenCloth="损坏的衣服",
+ItemName_VacMod.ClothFuel="衣服燃料"
 }

@@ -73,4 +73,22 @@ module VacMod
     Result : SmallSheetMetalBundle = 10,
     Time : 2,
   }
+
+  recipe Break Cloth
+  {
+    [VacModRecipe.GetItemTypes.CanBeBroken],
+    keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
+ 
+    Result : BrokenCloth,
+    Time : 20,
+  }
+
+  recipe Pack Broken Cloth
+  {
+    BrokenCloth = 50,
+    SheetRope,
+ 
+    Result : ClothFuel,
+    Time : 150,
+  }
 }

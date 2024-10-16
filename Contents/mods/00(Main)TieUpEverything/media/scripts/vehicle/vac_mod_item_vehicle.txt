@@ -4,18 +4,18 @@ module VacMod
   item EnginePartsBox
   {
     DisplayCategory = VehicleMaintenance,
-    DisplayName	=	A box of engine parts (50),
-    Icon	=	EnginePartsBox,
-    Type	=	Normal,
-    Weight	=	10,
+    DisplayName = A box of engine parts (50),
+    Icon = EnginePartsBox,
+    Type = Normal,
+    Weight = 10,
   }
 
   item EnginePartsCrate
   {
     DisplayCategory = VehicleMaintenance,
-    DisplayName	=	A crate of engine parts (50 * 20),
-    Icon	=	Crate,
-    Type	=	Normal,
-    Weight	=	20,
+    DisplayName = A crate of engine parts (50 * 20),
+    Icon = Crate,
+    Type = Normal,
+    Weight = 20,
   }
 }
