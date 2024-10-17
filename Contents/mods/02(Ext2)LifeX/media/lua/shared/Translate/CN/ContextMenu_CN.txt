@@ -1,0 +1,5 @@
+ContextMenu_CN = {
+ContextMenu_Cut_Corpse="切割尸体",
+ContextMenu_Cut_Corpse_Count="切割%1具尸体",
+
+}

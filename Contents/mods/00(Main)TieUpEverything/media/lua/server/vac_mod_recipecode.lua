@@ -1,7 +1,7 @@
 require("recipecode")
 require("Camping/camping_fuel")
 
-camping_fuel["VacMod.ClothFuel"] = 50 * 15
+camping_fuel["ClothFuel"] = 50.0 * 15 / 60
 
 VacModRecipe = {}
 VacModRecipe.GetItemTypes = {}
@@ -19,23 +19,6 @@ function VacModRecipe.OnCreate.OnCrateMagazine(items, result, player)
                 local newBullet = InventoryItemFactory.CreateItem(ammoType)
                 player:getInventory():AddItem(newBullet)
             end
-        end
-    end
-end
-
-function VacModRecipe.GetItemTypes.CanBeBroken(scriptItems)
-    local Cotton = "Cotton"
-    local Denim = "Denim"
-    local Leather = "Leather"
-    if (scriptItem:getType() == Type.Clothing) then
-        if (scriptItem:getFabricType() == Cotton or scriptItem:getFabricType() == Denim or scriptItem:getFabricType() == Leather) then
-            if ClothingRecipesDefinitions[scriptItem:getName()] then
-                -- ignore
-            else
-                scriptItems:add(scriptItem)
-            end
-        elseif (scriptItem:getBodyLocation() == "Shoes") then
-            scriptItems:add(scriptItem)
         end
     end
 end
