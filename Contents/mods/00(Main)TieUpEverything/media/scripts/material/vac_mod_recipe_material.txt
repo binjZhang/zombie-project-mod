@@ -1,15 +1,6 @@
 module VacMod
 {
 
-  recipe Scarp Empty Can
-  {
-    Base.TinCanEmpty/Base.BeerCanEmpty/Base.Pop2Empty/Base.Pop3Empty/Base.PopEmpty,
-    keep [Recipe.GetItemTypes.Hammer],
- 
-    Result : Base.ScrapMetal = 2,
-    Time : 5,
-  }
-
   recipe Bundle Sheet Metal
   {
     Base.SheetMetal = 10,
@@ -18,19 +9,19 @@ module VacMod
     Time : 2,
   }
 
-  recipe Crate Sheet Metal
-  {
-    SheetMetalBundle = 10,
- 
-    Result : SheetMetalCrate,
-    Time : 2,
-  }
-
   recipe Bundle Small Sheet Metal
   {
     Base.SmallSheetMetal = 10,
  
     Result : SmallSheetMetalBundle,
+    Time : 2,
+  }
+
+  recipe Crate Sheet Metal
+  {
+    SheetMetalBundle = 10,
+ 
+    Result : SheetMetalCrate,
     Time : 2,
   }
 
@@ -74,21 +65,12 @@ module VacMod
     Time : 2,
   }
 
-  recipe Break Cloth
+  recipe Scarp Empty Can
   {
-    [VacModRecipe.GetItemTypes.CanBeBroken],
-    keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
+    Base.TinCanEmpty/Base.BeerCanEmpty/Base.Pop2Empty/Base.Pop3Empty/Base.PopEmpty,
+    keep [Recipe.GetItemTypes.Hammer],
  
-    Result : BrokenCloth,
-    Time : 20,
-  }
-
-  recipe Pack Broken Cloth
-  {
-    BrokenCloth = 50,
-    Base.SheetRope,
- 
-    Result : ClothFuel,
-    Time : 150,
+    Result : Base.ScrapMetal = 2,
+    Time : 5,
   }
 }

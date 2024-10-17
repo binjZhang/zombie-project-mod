@@ -1,46 +1,22 @@
 module VacModExt1
 {
 
-  recipe Make 556 Reload Kit
+  recipe Convert 223 556
   {
-    Base.556Bullets = 2,
-    Base.556Clip,
-    Base.Nails = 4,
-    Base.Screws = 2,
-    Base.SheetMetal,
+    Base.223Bullets = 5,
     keep [Recipe.GetItemTypes.Screwdriver],
  
-    Result : 556ReloadKit,
-    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
-    Time : 150,
+    Result : Base.556Bullets = 5,
   }
 
-  recipe Make 9mm Reload Kit
+  recipe Hand Make 556 Magazine
   {
-    Base.9mmClip,
-    Base.Bullets9mm = 2,
-    Base.Nails = 4,
-    Base.Screws = 2,
-    Base.SheetMetal,
-    keep [Recipe.GetItemTypes.Screwdriver],
+    Base.DuctTape/Base.Scotchtape,
+    Base.SheetMetal = 2,
+    keep [Recipe.GetItemTypes.Hammer],
  
-    Result : 9mmReloadKit,
-    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
-    Time : 150,
-  }
-
-  recipe Make 45 Reload Kit
-  {
-    Base.45Clip,
-    Base.Bullets45 = 2,
-    Base.Nails = 4,
-    Base.Screws = 2,
-    Base.SheetMetal,
-    keep [Recipe.GetItemTypes.Screwdriver],
- 
-    Result : 45ReloadKit,
-    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
-    Time : 150,
+    Result : 556ExpansionClip2,
+    Time : 60,
   }
 
   recipe Make 308 Reload Kit
@@ -85,12 +61,46 @@ module VacModExt1
     Time : 150,
   }
 
-  recipe Convert 223 556
+  recipe Make 45 Reload Kit
   {
-    Base.223Bullets = 5,
+    Base.45Clip,
+    Base.Bullets45 = 2,
+    Base.Nails = 4,
+    Base.Screws = 2,
+    Base.SheetMetal,
     keep [Recipe.GetItemTypes.Screwdriver],
  
-    Result : Base.556Bullets = 5,
+    Result : 45ReloadKit,
+    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
+    Time : 150,
+  }
+
+  recipe Make 556 Reload Kit
+  {
+    Base.556Bullets = 2,
+    Base.556Clip,
+    Base.Nails = 4,
+    Base.Screws = 2,
+    Base.SheetMetal,
+    keep [Recipe.GetItemTypes.Screwdriver],
+ 
+    Result : 556ReloadKit,
+    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
+    Time : 150,
+  }
+
+  recipe Make 9mm Reload Kit
+  {
+    Base.9mmClip,
+    Base.Bullets9mm = 2,
+    Base.Nails = 4,
+    Base.Screws = 2,
+    Base.SheetMetal,
+    keep [Recipe.GetItemTypes.Screwdriver],
+ 
+    Result : 9mmReloadKit,
+    OnCreate : VacExt1Recipe.OnCreate.OnMakeReloadKit,
+    Time : 150,
   }
 
   recipe Tape Two 556 Magazine
@@ -101,15 +111,5 @@ module VacModExt1
     Result : 556ExpansionClip1,
     OnCreate : VacExt1Recipe.OnCreate.OnExpandClip,
     Time : 30,
-  }
-
-  recipe Hand Make 556 Magazine
-  {
-    Base.DuctTape/Base.Scotchtape,
-    Base.SheetMetal = 2,
-    keep [Recipe.GetItemTypes.Hammer],
- 
-    Result : 556ExpansionClip2,
-    Time : 60,
   }
 }

@@ -1,19 +1,6 @@
 module VacModExt1
 {
 
-  item 762ReloadKit
-  {
-    DisplayCategory = Ammo,
-    DisplayName = 7.62 Reload Kit,
-    Icon = BulletMold,
-    MetalValue = 15,
-    Tags = ReloadKit,
-    Type = Normal,
-    Weight = 5,
-    WorldStaticModel = Base.ShotGunShellsMold_Ground,
-    _AmmoType = AmmoMaker.Ammo_762x39mm,
-  }
-
   item 762ExpansionClip1
   {
     AmmoType = AmmoMaker.Ammo_762x39mm,
@@ -27,5 +14,18 @@ module VacModExt1
     Type = Normal,
     Weight = 0.3,
     WorldStaticModel = AmmoMaker.AKMMag,
+  }
+
+  item 762ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName = 7.62 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = AmmoMaker.Ammo_762x39mm,
   }
 }

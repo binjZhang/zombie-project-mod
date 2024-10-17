@@ -1,0 +1,5 @@
+ItemName_CN={
+ItemName_VacModExt2.BrokenCloth="损坏的衣服",
+ItemName_VacModExt2.ClothFuel="衣服燃料",
+ItemName_VacModExt2.RottedMeat="腐肉"
+}

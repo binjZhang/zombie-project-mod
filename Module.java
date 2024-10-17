@@ -1,12 +1,11 @@
-import java.io.File;
-import java.io.IOException;
+package cn.xports.smartplay.programme;
+
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -18,11 +17,22 @@ public class Module {
 
     private List<Recipe> recipes = new ArrayList();
 
+    private List<String> imports = new ArrayList();
+
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("module ");
         builder.append(name);
         builder.append("\n{");
+        if (!imports.isEmpty()) {
+            builder.append("\n  imports\n  {");
+            imports.forEach(str -> {
+                builder.append("\n  ");
+                builder.append(str);
+                builder.append(",");
+            });
+            builder.append("\n  }");
+        }
         items.forEach(i -> {
             builder.append("\n\n");
             builder.append(i.toString());
@@ -48,12 +58,15 @@ public class Module {
             if (inner.length() <= 1) {
                 break;
             }
-            if (inner.startsWith("item")) {
+            if (inner.startsWith("imports")) {
+                inner = inner.replace("imports", "").replace("{", "").replace("}", "").trim();
+                Arrays.stream(inner.split(",")).filter(Module::isNotBlank)
+                        .forEach(str -> this.imports.add(str));
+            } else if (inner.startsWith("item")) {
                 Item item = new Item();
                 item.parse(inner);
                 this.items.add(item);
-            }
-            if (inner.startsWith("recipe")) {
+            } else if (inner.startsWith("recipe")) {
                 Recipe recipe = new Recipe();
                 recipe.parse(inner);
                 this.recipes.add(recipe);
@@ -62,7 +75,6 @@ public class Module {
     }
 
 
-    @Data
     static class Item {
 
         private String name;
@@ -77,7 +89,7 @@ public class Module {
             props.forEach((k, v) -> {
                 builder.append("\n    ");
                 builder.append(k);
-                if (StringUtils.isNotBlank(v)) {
+                if (isNotBlank(v)) {
                     builder.append(" = ");
                     builder.append(v);
                 }
@@ -94,7 +106,7 @@ public class Module {
             this.name = firstLine.replace("item", "").replace("{", "").trim();
             Arrays.stream(reader.readUtil('}').split(","))
                     .map(str -> str.replace("}", "").trim())
-                    .filter(StringUtils::isNotBlank)
+                    .filter(Module::isNotBlank)
                     .forEach(str -> {
                         if (str.contains("=")) {
                             String[] arr = str.split("=");
@@ -166,7 +178,7 @@ public class Module {
             boolean complete = false;
             List<String> list = Arrays.stream(reader.readUtil('}').split(","))
                     .map(str -> str.replace("}", "").trim())
-                    .filter(StringUtils::isNotBlank)
+                    .filter(Module::isNotBlank)
                     .collect(Collectors.toList());
             for (String str : list) {
                 if (str.startsWith("Result")) {
@@ -229,7 +241,7 @@ public class Module {
     }
 
     private static List<Path> recuseFindTxt(Path path) {
-        List<Path> txtPath = Lists.newArrayList();
+        List<Path> txtPath = new ArrayList<>();
         for (File f : path.toFile().listFiles()) {
             Path child = f.toPath();
             if (f.isFile() && f.getName().endsWith(".txt")) {
@@ -242,6 +254,18 @@ public class Module {
         return txtPath;
     }
 
+    private static boolean isNotBlank(String str) {
+        return str != null && str.trim().length() > 0;
+    }
+
+    private static String toString(InputStream is, String charset) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is, charset));
+        String txt = reader.lines().collect(Collectors.joining("\n"));
+        is.close();
+        return txt;
+
+    }
+
     public static void main(String[] args) throws IOException {
         String path = "./Contents/mods";
         for (File child : Paths.get(path).toFile().listFiles()) {
@@ -249,7 +273,7 @@ public class Module {
             if ((scriptPath = child.toPath().resolve("media/scripts")).toFile().exists()) {
                 List<Path> txtPath = recuseFindTxt(scriptPath);
                 for (Path txt : txtPath) {
-                    String raw = IOUtils.toString(Files.newInputStream(txt), "UTF-8");
+                    String raw = toString(Files.newInputStream(txt), "UTF-8");
                     Module module = new Module();
                     module.parseRaw(raw);
                     System.out.println(module.toString());
@@ -260,3 +284,4 @@ public class Module {
         }
     }
 }
+

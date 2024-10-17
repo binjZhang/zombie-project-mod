@@ -40,18 +40,4 @@ module VacMod
     Weight = 10,
     WorldStaticModel = Crate,
   }
-
-  item BrokenCloth
-  {
-    DisplayCategory = Junk,
-    Type = Normal,
-    Weight = 0.2,
-  }
-
-  item ClothFuel
-  {
-    DisplayCategory = Junk,
-    Type = Normal,
-    Weight = 1,
-  }
 }

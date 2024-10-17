@@ -1,0 +1,4 @@
+Recipes_CN={
+  Recipe_Break_Cloth = "损坏衣服",
+  Recipe_Pack_Broken_Cloth = "打包损坏的衣服"
+}

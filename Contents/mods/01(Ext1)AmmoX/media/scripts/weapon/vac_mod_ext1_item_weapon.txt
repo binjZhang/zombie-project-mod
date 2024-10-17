@@ -1,32 +1,6 @@
 module VacModExt1
 {
 
-  item 556ReloadKit
-  {
-    DisplayCategory = Ammo,
-    DisplayName = 5.56 Reload Kit,
-    Icon = BulletMold,
-    MetalValue = 15,
-    Tags = ReloadKit,
-    Type = Normal,
-    Weight = 5,
-    WorldStaticModel = Base.ShotGunShellsMold_Ground,
-    _AmmoType = Base.556Bullets,
-  }
-
-  item 9mmReloadKit
-  {
-    DisplayCategory = Ammo,
-    DisplayName = 9mm Reload Kit,
-    Icon = BulletMold,
-    MetalValue = 15,
-    Tags = ReloadKit,
-    Type = Normal,
-    Weight = 5,
-    WorldStaticModel = Base.ShotGunShellsMold_Ground,
-    _AmmoType = Base.Bullets9mm,
-  }
-
   item 308ReloadKit
   {
     DisplayCategory = Ammo,
@@ -40,19 +14,6 @@ module VacModExt1
     _AmmoType = Base.308Bullets,
   }
 
-  item 45ReloadKit
-  {
-    DisplayCategory = Ammo,
-    DisplayName = .45 Reload Kit,
-    Icon = BulletMold,
-    MetalValue = 15,
-    Tags = ReloadKit,
-    Type = Normal,
-    Weight = 5,
-    WorldStaticModel = Base.ShotGunShellsMold_Ground,
-    _AmmoType = Base.Bullets45,
-  }
-
   item 44ReloadKit
   {
     DisplayCategory = Ammo,
@@ -64,6 +25,19 @@ module VacModExt1
     Weight = 5,
     WorldStaticModel = Base.ShotGunShellsMold_Ground,
     _AmmoType = Base.Bullets44,
+  }
+
+  item 45ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName = .45 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.Bullets45,
   }
 
   item 556ExpansionClip1
@@ -96,5 +70,31 @@ module VacModExt1
     Type = Normal,
     Weight = 0.1,
     WorldStaticModel = Gun_Magazine_Ground,
+  }
+
+  item 556ReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName = 5.56 Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.556Bullets,
+  }
+
+  item 9mmReloadKit
+  {
+    DisplayCategory = Ammo,
+    DisplayName = 9mm Reload Kit,
+    Icon = BulletMold,
+    MetalValue = 15,
+    Tags = ReloadKit,
+    Type = Normal,
+    Weight = 5,
+    WorldStaticModel = Base.ShotGunShellsMold_Ground,
+    _AmmoType = Base.Bullets9mm,
   }
 }

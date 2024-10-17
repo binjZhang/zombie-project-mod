@@ -1,42 +1,6 @@
 module VacMod
 {
 
-  item 556ClipCrate
-  {
-    DisplayCategory = Ammo,
-    DisplayName = A Crate of  5.56 Magazine(20),
-    Icon = GuitarCase02,
-    Type = Normal,
-    Weight = 1,
-  }
-
-  item 9mmClipCrate
-  {
-    DisplayCategory = Ammo,
-    DisplayName = A Crate of  9mm Magazine(20),
-    Icon = GuitarCase02,
-    Type = Normal,
-    Weight = 1,
-  }
-
-  item 45ClipCrate
-  {
-    DisplayCategory = Ammo,
-    DisplayName = A Crate of .45 Magazine(20),
-    Icon = GuitarCase02,
-    Type = Normal,
-    Weight = 1,
-  }
-
-  item 44ClipCrate
-  {
-    DisplayCategory = Ammo,
-    DisplayName = A Crate of .44 Magazine(20),
-    Icon = GuitarCase02,
-    Type = Normal,
-    Weight = 1,
-  }
-
   item 223ClipCrate
   {
     DisplayCategory = Ammo,
@@ -55,10 +19,37 @@ module VacMod
     Weight = 1,
   }
 
-  item M14ClipCrate
+  item 44ClipCrate
   {
     DisplayCategory = Ammo,
-    DisplayName = A Crate of M14 Magazine(20),
+    DisplayName = A Crate of .44 Magazine(20),
+    Icon = GuitarCase02,
+    Type = Normal,
+    Weight = 1,
+  }
+
+  item 45ClipCrate
+  {
+    DisplayCategory = Ammo,
+    DisplayName = A Crate of .45 Magazine(20),
+    Icon = GuitarCase02,
+    Type = Normal,
+    Weight = 1,
+  }
+
+  item 556ClipCrate
+  {
+    DisplayCategory = Ammo,
+    DisplayName = A Crate of  5.56 Magazine(20),
+    Icon = GuitarCase02,
+    Type = Normal,
+    Weight = 1,
+  }
+
+  item 9mmClipCrate
+  {
+    DisplayCategory = Ammo,
+    DisplayName = A Crate of  9mm Magazine(20),
     Icon = GuitarCase02,
     Type = Normal,
     Weight = 1,
@@ -77,5 +68,14 @@ module VacMod
     Type = Normal,
     Weight = 0.4,
     WorldStaticModel = Gun_Magazine_Ground,
+  }
+
+  item M14ClipCrate
+  {
+    DisplayCategory = Ammo,
+    DisplayName = A Crate of M14 Magazine(20),
+    Icon = GuitarCase02,
+    Type = Normal,
+    Weight = 1,
   }
 }

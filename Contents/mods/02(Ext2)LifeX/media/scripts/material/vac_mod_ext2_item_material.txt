@@ -1,0 +1,40 @@
+module VacModExt2
+{
+
+  item BrokenCloth
+  {
+    DisplayCategory = Junk,
+    DisplayName = BrokenCloth,
+    Icon = Cloth,
+    Type = Normal,
+    Weight = 0.2,
+  }
+
+  item ClothFuel
+  {
+    DisplayCategory = Junk,
+    DisplayName = ClothFuel,
+    Icon = Cloth,
+    Type = Normal,
+    Weight = 1,
+  }
+
+  item RottedMeat
+  {
+    BadCold = true,
+    BadInMicrowave = true,
+    DangerousUncooked = TRUE,
+    DaysFresh = 1,
+    DaysTotallyRotten = 1,
+    DisplayCategory = Food,
+    DisplayName = RottedMeat,
+    FoodType = Meat,
+    GoodHot = true,
+    HungerChange = -100,
+    Icon = RottedMeat,
+    IsCookable = False,
+    Type = Food,
+    UnhappyChange = 200,
+    Weight = 6,
+  }
+}

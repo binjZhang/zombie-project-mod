@@ -1,0 +1,21 @@
+module VacModExt2
+{
+
+  recipe Break Cloth
+  {
+    [VacExt2Recipe.GetItemTypes.CanBeBroken],
+    keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
+ 
+    Result : BrokenCloth,
+    Time : 20,
+  }
+
+  recipe Pack Broken Cloth
+  {
+    Base.SheetRope,
+    BrokenCloth = 50,
+ 
+    Result : ClothFuel,
+    Time : 150,
+  }
+}
